@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="27" height="20" tilewidth="30" tileheight="30" infinite="0" nextlayerid="7" nextobjectid="61">
+ <editorsettings>
+  <export target="../level_7.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" name="map" tilewidth="30" tileheight="30" tilecount="5" columns="5">
+  <image source="../Sprite/map/groundTiled.png" width="150" height="30"/>
+ </tileset>
+ <tileset firstgid="6" name="Torch" tilewidth="30" tileheight="30" tilecount="4" columns="4">
+  <image source="../Sprite/object/Torch.png" width="120" height="30"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+    <frame tileid="2" duration="250"/>
+    <frame tileid="3" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="10" name="Enemy" tilewidth="30" tileheight="30" tilecount="5" columns="5">
+  <image source="../Sprite/ennemies/Enemy.png" width="150" height="30"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+    <frame tileid="2" duration="250"/>
+    <frame tileid="3" duration="250"/>
+    <frame tileid="4" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="15" name="arrow" tilewidth="30" tileheight="30" tilecount="2" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="30" height="30" source="../Sprite/object/tile-arrow-left.png"/>
+  </tile>
+  <tile id="1">
+   <image width="30" height="30" source="../Sprite/object/tile-arrow-right.png"/>
+  </tile>
+ </tileset>
+ <layer id="1" name="InvisibleLayer" width="27" height="20">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,0,0,0,0,1,1,0,0,0,0,0,1,0,4,1,0,4,1,2,1,0,0,0,0,1,
+1,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,
+1,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,
+1,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,0,1,
+1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,1,
+1,1,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,5,0,0,1,
+1,0,1,3,0,0,0,0,0,1,1,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,1,
+1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,
+1,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,1,0,0,0,1,1,
+1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,1,
+1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,0,1,0,0,1,
+1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,
+1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1,1,1,1,1,0,0,0,0,0,1,0,1,1,1,1,0,1,1,0,1,1,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="VisibleLayer" width="27" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,3,0,0,0,0,0,0,0,0,0,
+0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,
+0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,5,0,0,0,
+0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,1,
+0,0,0,0,0,1,1,1,1,1,0,2,0,0,0,0,2,0,0,2,0,0,3,4,1,1,1
+</data>
+ </layer>
+ <objectgroup id="3" name="Triangle">
+  <properties>
+   <property name="type" value="triangle"/>
+   <property name="vx" type="int" value="5"/>
+  </properties>
+  <object id="55" gid="10" x="720" y="420" width="30" height="30">
+   <properties>
+    <property name="type" value="triangle"/>
+    <property name="vx" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="58" gid="10" x="600" y="450" width="30" height="30">
+   <properties>
+    <property name="type" value="triangle"/>
+    <property name="vx" type="int" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="TriangleInvertVx">
+  <object id="56" gid="16" x="690" y="420" width="30" height="30">
+   <properties>
+    <property name="pointing" value="right"/>
+    <property name="type" value="direction"/>
+   </properties>
+  </object>
+  <object id="57" gid="15" x="750" y="420" width="30" height="30">
+   <properties>
+    <property name="pointing" value="left"/>
+    <property name="type" value="direction"/>
+   </properties>
+  </object>
+  <object id="59" gid="16" x="510" y="450" width="30" height="30">
+   <properties>
+    <property name="pointing" value="right"/>
+    <property name="type" value="direction"/>
+   </properties>
+  </object>
+  <object id="60" gid="15" x="660" y="450" width="30" height="30">
+   <properties>
+    <property name="pointing" value="left"/>
+    <property name="type" value="direction"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
