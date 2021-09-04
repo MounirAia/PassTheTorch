@@ -5,7 +5,7 @@ To play the game you can go on [itch.io](https://nir9420.itch.io/passthetorch)
 
 ## Technology
 I programmed this game with **lua** and I used the framework **LOVE 2D**.
-The **level** were created with **Tiled editor**.
+The **levels** were created with **Tiled editor**.
 The **sprites** were drawn with **pyxel edit**.
 
 ## My contribution
