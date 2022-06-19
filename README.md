@@ -1,7 +1,7 @@
 # PassTheTorch
 A small platformer to speedrun. It took me approximately 5 months to devellop this game (with school on top for at least 3 months of developpement).
 
-To play the game you can go on [itch.io](https://nir9420.itch.io/passthetorch)
+**To play the game** you can go on [itch.io](https://nir9420.itch.io/passthetorch)
 
 ## Technology
 I programmed this game with **lua** and I used the framework **LOVE 2D**.
