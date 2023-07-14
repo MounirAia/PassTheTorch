@@ -1,24 +1,36 @@
-# PassTheTorch
-A small platformer to speedrun. It took me approximately 5 months to devellop this game (with school on top for at least 3 months of developpement).
 
-**To play the game** you can go on [itch.io](https://nir9420.itch.io/passthetorch)
+# Pass The Torch
 
-## Technology
-I programmed this game with **lua** and I used the framework **LOVE 2D**.
-The **levels** were created with **Tiled editor**.
-The **sprites** were drawn with **pyxel edit**.
+Pass The Torch is a small platformer game developed using the LUA programming language and the LÖVE framework. The game features a challenging platform-based gameplay where the player controls a character who must navigate through various levels by jumping, avoiding obstacles, and passing the torch to light up checkpoints.
 
-## My contribution
-I coded all the game and drawn everything. 
-I bought the music on humble bundle.
+![gif1](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzR6ZWUxdjNvMjdtcGJ3aW5oNzhsMzFpMDlkYjlwczQ3Zm8waGVkbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EPSvQmBEsaUnW3m7pD/giphy.gif)
 
-## What I learned
-- Game loop theory.
-- How to implement a basic collision detection.
-- Working with multiple levels.
-- Managing differents scenes (menu/game/game over).
-- Animation system.
-- Implementing an OOP (not as develloped as JAVA or any other oriented OOP languages) approach to implement the differents feature on the game. 
-- Working with list of object (sprites).
-- Time management (decision making, clearly stating the scope of your project). 
-- How to keep motivation with project that takes time to create. 
+## Installation
+Only on Windows Through the zip file:
+1. Download the zip file from [itchio](https://nir9420.itch.io/passthetorch).
+
+All OS:
+1. Make sure you have the LÖVE framework installed on your machine. You can download it from the [LÖVE website](https://love2d.org/).  
+2. Clone this repository to your local machine. 
+3. Run the game by opening the project in a code editor and run the main.lua file
+
+## Gameplay
+
+- Use the arrow keys to move the character.
+- Use 'd' to dash
+- Press the spacebar to jump.
+- Reach the torch to progress to the next level.
+- Be careful not to fall off the platforms or touch any hazardous objects.
+
+## Things I Learned
+
+During the development of Pass The Torch, I had the opportunity to learn and apply the following concepts and techniques:
+
+- Game development using the LUA programming language.
+- Working with the LÖVE framework to create 2D games.
+- Implementing platform-based gameplay mechanics.
+- Collision detection and response for player-character and game objects.
+- Level design and progression.
+- Game physics and character movement.
+- Handling input from keyboard controls.
+- Game audio and sound effects.
